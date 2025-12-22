@@ -57,7 +57,7 @@ header.fixed-header .navbar-nav .nav-link{color:var(--primary-color)}
 .banner_section .bottom_content .item_box{display:flex;width:100%;align-items:center;line-height:normal;margin:0;padding:0}
 .banner_section .bottom_content .item .inner{ background: #000000ba; padding:15px 40px;border-radius:20px;border: 1px solid #fbe486;color: #fbe486;}
 .banner_section .bottom_content .item{padding:5px;border-radius:20px;border: 1px solid #fbe486;margin:0 5px}
-.banner_section .bottom_content .item .inner p{font-size:20px;text-align:center;/* font-family:var(--secondory-font); */letter-spacing:1px;margin-bottom:0;font-weight:600}
+.banner_section .bottom_content .item .inner p{font-size:16px;text-align:center;/* font-family:var(--secondory-font); */letter-spacing:1px;margin-bottom:0;font-weight:600}
 .banner_section .right_form{position:absolute;bottom:0;right:0;width:22%;height:auto;z-index:9;border-radius: 10px;border: 0;}
 .banner_section .form_sec{padding: 15px 15px;background: #ffffff8a;/* opacity:.95; */backdrop-filter: blur(25px);}
 .banner_section h2.typo{/* letter-spacing:2px; */font-weight:500;font-size: 30px;}
@@ -68,7 +68,7 @@ header.fixed-header .navbar-nav .nav-link{color:var(--primary-color)}
 .banner_btn button{padding: 13px 30px;border:none;    background: #e7b221;color: #000000;/* text-transform:uppercase; */letter-spacing: 1px;font-size:18px;position:relative;border-radius: 10px;backdrop-filter: blur(25px);}
 .icon-next{position:relative;top:-.1em;margin-left:.6em;vertical-align:middle;display:inline-block;width:.94em;height:.75em;background:url(../images/icon/next.png) 0 0 / .94em .75em no-repeat;filter: invert(1) brightness(0) ;}
 .banner_section ul.key_high li span{background: #0000004d;padding:8px 15px 8px 45px;border-radius:10px;color: #ffffff;backdrop-filter: blur(25px);}
-.banner_section .bottom_content .item .inner p span.key{font-size:30px;padding-bottom:10px;margin-bottom:15px;display:inline-block;border-bottom: 2px dotted #fbe486;}
+.banner_section .bottom_content .item .inner p span.key{font-size:20px;padding-bottom:10px;margin-bottom:15px;display:inline-block;border-bottom: 2px dotted #fbe486;}
 .banner_section h2.form_title{font-size:36px;color: #000000;margin-bottom:15px;text-align: center;}
 .banner_section .right_form .form-control{border-radius:0;background-color:rgba(255,255,255,0.85);padding:12px 15px;border:none;background: transparent;border: 1px solid #000000;color: #000000;border-radius: 8px;}
 .banner_section button.btn.main_button{color:#fff;background-color: #000;}
@@ -307,7 +307,7 @@ header ul li.nav-item.call_btn {
     .banner_section .carousel_btns button{width:70px;height:70px}
     .banner_section .carousel-control-prev{left:64%}
     .amenities_section .amenities_wrapper .title{background:#9b9183;padding:28px}
-    .banner_section .bottom_content .item .inner p span.key{margin-bottom:0;font-size:22px;padding-bottom:0;border:none;margin-left:15px}
+    .banner_section .bottom_content .item .inner p span.key{margin-bottom:0;font-size:18px;padding-bottom:0;border:none;margin-left:15px}
     .banner_btn button{font-size:16px;padding:12px 20px}
     .amenities_section .amenities_wrapper .title h2{font-size:26px}
     .amenities_section .amenities_wrapper .title{padding:20px}
