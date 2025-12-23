@@ -50,6 +50,10 @@ img {
 .ptb-40 {
   padding: 40px 0;
 }
+
+.ptb-20 {
+  padding: 20px 0;
+}
 /* header section start here */
 header {
   position: fixed;
@@ -363,6 +367,15 @@ button.btn.main_button {
   width: 100vw;
   object-fit: cover;
   margin-top: 80px;
+}
+
+@media(max-width:768px){
+  .banner-img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  margin-top: 0px;
+}
 }
 .banner_section .bottom_content .item .inner p {
   display: flex;
@@ -1267,6 +1280,7 @@ footer .inner-footer-bottom p a {
   .mobile-section {
     display: flex;
     justify-content: space-between;
+    display: none;
   }
   .overview::after {
     font-size: 40px;
@@ -1535,7 +1549,7 @@ footer .inner-footer-bottom p a {
     padding: 2px 13px;
   }
   header .header-wrapper {
-    padding: 0px 0;
+    padding: 5px 0;
     justify-content: space-between;
   }
   .banner_section .carousel-inner {
@@ -1658,5 +1672,25 @@ footer .inner-footer-bottom p a {
     -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
     animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
     font-size: 18px;
+  }
+}
+
+
+@media (min-width: 660px) and (max-width: 768px) {
+
+  .banner_section .carousel_btns button {
+    bottom: auto;
+    top: 30%;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 500px) and (max-width: 659px) {
+
+  .banner_section .carousel_btns button {
+    bottom: auto;
+    top: 23%;
+    width: 40px;
+    height: 40px;
   }
 }
