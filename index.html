@@ -1068,21 +1068,18 @@
                         <div class="form_section">
                             <form id="contactForm2" action="/form.php" method="POST">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Name" name="name"
-                                        >
+                                    <input type="text" class="form-control" placeholder="Enter Name" name="name">
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Enter Email" name="email"
-                                        >
+                                    <input type="email" class="form-control" placeholder="Enter Email" name="email">
                                 </div>
                                 <div class="form-group">
                                     <input type="number" class="form-control phone-input" placeholder="Enter Number"
                                         name="phone" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Message" name="message"
-                                        >
+                                    <input type="text" class="form-control" placeholder="Enter Message" name="message">
                                 </div>
                                 <div class="form-group">
                                     <button class="btn main_button submit_btn" type="submit" name="submit">Submit Now
@@ -1175,12 +1172,11 @@
                     <div class="form_section">
                         <form id="enquiryForm" action="/form.php" method="POST">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Name" name="name" >
+                                <input type="text" class="form-control" placeholder="Enter Name" name="name">
                             </div>
 
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Enter Email" name="email"
-                                    >
+                                <input type="email" class="form-control" placeholder="Enter Email" name="email">
                             </div>
 
                             <div class="form-group">
@@ -1189,8 +1185,7 @@
                             </div>
 
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Message" name="message"
-                                    >
+                                <input type="text" class="form-control" placeholder="Enter Message" name="message">
                             </div>
                             <button class="btn dark_btn rounded submit_btn main_button" type="submit"
                                 name="submit">Submit Now
@@ -1493,15 +1488,31 @@
                 $("body").removeClass("mobile-open");
             });
         });
+    </script>
 
-
+    <script>
         $(document).ready(function () {
-            setTimeout(() => {
-                $("#exampleModal1").modal("show")
-            }, 30000);
-        })
+            // Stop completely if already submitted
+            if (localStorage.getItem("enquirySubmitted")) return;
 
+            let popupTimer;
 
+            function startPopupTimer() {
+                if (localStorage.getItem("enquirySubmitted")) return;
+
+                popupTimer = setTimeout(() => {
+                    $("#exampleModal1").modal("show");
+
+                }, 15000);
+            }
+            startPopupTimer();
+            $("#exampleModal1").on("hidden.bs.modal", function () {
+                if (localStorage.getItem("enquirySubmitted")) return;
+
+                startPopupTimer();
+            });
+
+        });
     </script>
 
 
@@ -1660,6 +1671,8 @@
                                 document.body.removeChild(a);
                                 downloadFileUrl = null;
                             }
+                            window.location.href =
+                                "/thankyou.html";
 
                         } else {
                             alert(data.message || "Something went wrong");
