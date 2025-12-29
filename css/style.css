@@ -851,6 +851,7 @@ footer.footer {
 }
 footer .inner-footer-bottom p {
   margin-bottom: 10px;
+  text-align: center;
 }
 /* form css */
 .right_form {
@@ -1706,4 +1707,54 @@ footer .inner-footer-bottom p a {
     margin-left: 30px;
     font-size: 21px;
   }
+}
+
+
+
+.brochure-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #000000ba;
+  color: #fbe486;
+  padding: 22px 28px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brochure-btn:hover {
+  background-color: #222;
+  color: #fbe486;
+  transform: translateY(-2px);
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.brochure-btn i {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .brochure-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 12px;
+    padding: 10px 20px !important;
+    background-color: #000000ba !important;
+    margin-bottom: 8px;
+  }
+
+}
+
+@media(max-width:540px){
+  footer .inner-footer-bottom p {
+  margin-bottom: 10px;
+  text-align: left;
+}
 }
